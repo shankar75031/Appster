@@ -33,13 +33,20 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
         itemPrice.setText(currentItem.getPrice());
         final TextView itemCount = (TextView) listItemView.findViewById(R.id.list_customer_item_quantity);
         itemCount.setText("0");
+
+        final int itemQty = Integer.parseInt(currentItem.getQuantity());
+
+
         Button incr = (Button) listItemView.findViewById(R.id.button_customer_quantity_increase);
         Button decr = (Button) listItemView.findViewById(R.id.button_customer_quantity_decrease);
         incr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int count = Integer.parseInt(itemCount.getText().toString());
-                count++;
+                if(count < itemQty)
+                    count++;
+                else
+                    Toast.makeText(getContext(),"Item count cannot be greater than " + count, Toast.LENGTH_SHORT).show();
                 itemCount.setText(Integer.toString(count));
             }
         });

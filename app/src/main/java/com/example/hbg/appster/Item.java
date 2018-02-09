@@ -7,13 +7,23 @@ package com.example.hbg.appster;
 public class Item {
     String name;
     String price;
+    String quantity;
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
+    }
 
     public Item() {
     }
 
-    public Item(String name, String price) {
+    public Item(String name, String price, String quantity) {
         this.name = name;
         this.price = price;
+        this.quantity = quantity;
     }
 
     public String getName() {
