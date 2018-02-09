@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/list_customer_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:text="Product Name" />
+
+    <TextView
+        android:id="@+id/list_customer_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp"
+        android:text="20" />
+
+    <Button
+        android:id="@+id/button_customer_quantity_increase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/customer_quantity_decrease"
+        android:layout_alignBottom="@+id/customer_quantity_decrease"
+        android:layout_toStartOf="@+id/customer_quantity_decrease"
+        android:text="^" />
+
+    <Button
+        android:id="@+id/button_customer_quantity_decrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/list_customer_item_quantity"
+        android:layout_below="@+id/list_customer_item_quantity"
+        android:text="v" />
+
+    <TextView
+        android:id="@+id/list_customer_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/list_customer_item_name"
+        android:layout_below="@+id/list_customer_item_name"
+        android:layout_marginTop="11dp"
+        android:textSize="20dp"
+        android:text="$2.5" />
+
+
+</RelativeLayout>
