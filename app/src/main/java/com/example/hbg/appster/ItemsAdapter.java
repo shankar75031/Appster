@@ -30,7 +30,7 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
         TextView itemName = (TextView) listItemView.findViewById(R.id.list_customer_item_name);
         itemName.setText(currentItem.getName());
         TextView itemPrice = (TextView) listItemView.findViewById(R.id.list_customer_item_price);
-        itemPrice.setText(currentItem.getPrice());
+        itemPrice.setText("Price: " + currentItem.getPrice());
         final TextView itemCount = (TextView) listItemView.findViewById(R.id.list_customer_item_quantity);
         itemCount.setText("0");
 
@@ -46,7 +46,7 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
                 if(count < itemQty)
                     count++;
                 else
-                    Toast.makeText(getContext(),"Item count cannot be greater than " + count, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(),"Available stock is  : " + count + " items", Toast.LENGTH_SHORT).show();
                 itemCount.setText(Integer.toString(count));
             }
         });

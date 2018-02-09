@@ -6,7 +6,8 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/list_customer_item_name"
+        android:textStyle="bold"
+        android:id="@+id/list_owner_item_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -15,7 +16,7 @@
         android:text="Product Name" />
 
     <TextView
-        android:id="@+id/list_customer_item_quantity"
+        android:id="@+id/list_owner_item_quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -24,11 +25,11 @@
         android:text="20" />
 
     <TextView
-        android:id="@+id/list_customer_item_price"
+        android:id="@+id/list_owner_item_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/list_customer_item_name"
-        android:layout_below="@+id/list_customer_item_name"
+        android:layout_alignStart="@+id/list_owner_item_name"
+        android:layout_below="@+id/list_owner_item_name"
         android:layout_marginTop="11dp"
         android:textSize="20dp"
         android:text="$2.5" />

@@ -24,15 +24,15 @@ public class ItemOwnerAdapter  extends ArrayAdapter<Item> {
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_customer, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_owner, parent, false);
         }
         Item currentItem = getItem(position);
-        TextView itemName = (TextView) listItemView.findViewById(R.id.list_customer_item_name);
+        TextView itemName = (TextView) listItemView.findViewById(R.id.list_owner_item_name);
         itemName.setText(currentItem.getName());
-        TextView itemPrice = (TextView) listItemView.findViewById(R.id.list_customer_item_price);
-        itemPrice.setText(currentItem.getPrice());
-        TextView itemQty = (TextView) listItemView.findViewById(R.id.list_customer_item_quantity);
-        itemQty.setText(currentItem.getQuantity());
+        TextView itemPrice = (TextView) listItemView.findViewById(R.id.list_owner_item_price);
+        itemPrice.setText("Price: " + currentItem.getPrice());
+        TextView itemQty = (TextView) listItemView.findViewById(R.id.list_owner_item_quantity);
+        itemQty.setText("Quantity: " + currentItem.getQuantity());
         return listItemView;
 
     }

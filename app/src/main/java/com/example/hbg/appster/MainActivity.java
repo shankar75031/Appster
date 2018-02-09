@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 namestr = uname.getText().toString();
                 passwordstr = pass.getText().toString();
-                if(namestr.equals("admin")){
+                if(namestr.equals("admin") && passwordstr.equals("123")){
                     startActivity(new Intent(MainActivity.this, OwnerActivity.class));
                 }
                 else{
