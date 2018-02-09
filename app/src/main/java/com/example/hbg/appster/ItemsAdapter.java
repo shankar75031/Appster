@@ -34,7 +34,12 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
         itemCount.setText("0");
         Button incr = (Button) listItemView.findViewById(R.id.button_customer_quantity_increase);
         Button decr = (Button) listItemView.findViewById(R.id.button_customer_quantity_decrease;
-        incr.se
+        incr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
         return listItemView;
 
     }
