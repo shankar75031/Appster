@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 namestr = uname.getText().toString();
                 passwordstr = pass.getText().toString();
                 if(namestr.equals("admin")){
-                    startActivity(new Intent(MainActivity.this, AddItemActivity.class));
+                    startActivity(new Intent(MainActivity.this, OwnerActivity.class));
                 }
                 else{
                     startActivity(new Intent(MainActivity.this, ShoppingActivity.class));
