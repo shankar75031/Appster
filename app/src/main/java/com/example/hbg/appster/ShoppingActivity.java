@@ -2,13 +2,15 @@ package com.example.hbg.appster;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 public class ShoppingActivity extends AppCompatActivity {
 
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customer_home);
-
+        listView = (ListView) find
     }
 }
