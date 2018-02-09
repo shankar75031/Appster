@@ -27,9 +27,9 @@
         android:id="@+id/button_customer_quantity_increase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/customer_quantity_decrease"
-        android:layout_alignBottom="@+id/customer_quantity_decrease"
-        android:layout_toStartOf="@+id/customer_quantity_decrease"
+        android:layout_alignBaseline="@+id/button_customer_quantity_decrease"
+        android:layout_alignBottom="@+id/button_customer_quantity_decrease"
+        android:layout_toStartOf="@+id/button_customer_quantity_decrease"
         android:text="^" />
 
     <Button
