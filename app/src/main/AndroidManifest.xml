@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShoppingActivity"></activity>
+        <activity android:name=".ShoppingActivity" />
+        <activity android:name=".NewItem" />
+        <activity android:name=".OwnerActivity" />
+        <activity android:name=".MainIntro" android:theme="@style/Theme.Intro"></activity>
     </application>
 
 </manifest>
