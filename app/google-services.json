@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "259431829612",
+    "firebase_url": "https://appster-2dccc.firebaseio.com",
+    "project_id": "appster-2dccc",
+    "storage_bucket": "appster-2dccc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259431829612:android:6b4217112cdae6fc",
+        "android_client_info": {
+          "package_name": "com.example.hbg.appster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259431829612-fnl8a7n4anb26vft52ugj4u5kged9els.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAid2fQ6_nvjHz3Rnsq99rCsp7LTkoznYA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
