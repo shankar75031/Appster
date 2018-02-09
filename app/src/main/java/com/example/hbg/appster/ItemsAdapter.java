@@ -30,11 +30,11 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
         TextView itemName = (TextView) listItemView.findViewById(R.id.list_customer_item_name);
         itemName.setText(currentItem.getName());
         TextView itemPrice = (TextView) listItemView.findViewById(R.id.list_customer_item_price);
-        itemName.setText(currentItem.getPrice());
+        itemPrice.setText(currentItem.getPrice());
         final TextView itemCount = (TextView) listItemView.findViewById(R.id.list_customer_item_quantity);
         itemCount.setText("0");
         Button incr = (Button) listItemView.findViewById(R.id.button_customer_quantity_increase);
-        Button decr = (Button) listItemView.findViewById(R.id.button_customer_quantity_decrease;
+        Button decr = (Button) listItemView.findViewById(R.id.button_customer_quantity_decrease);
         incr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +50,7 @@ public class ItemsAdapter extends ArrayAdapter<Item> {
                 if(count > 0)
                     count--;
                 else
-                    Toast.makeText(getContext(),"Item count cannot be less than 0",Toast.LENGTH_SHORT);
+                    Toast.makeText(getContext(),"Item count cannot be less than 0",Toast.LENGTH_SHORT).show();
                 itemCount.setText(Integer.toString(count));
             }
         });
